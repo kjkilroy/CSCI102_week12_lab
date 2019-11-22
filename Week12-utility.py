@@ -7,3 +7,10 @@
 
 def PrintOutput(a):
     print('OUTPUT',a)
+
+
+def LoadFile (file_name):
+    file = open(file_name, 'r')
+    text = file.read()
+    text = text.split('\n')
+    return text
