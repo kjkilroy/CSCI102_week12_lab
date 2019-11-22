@@ -51,4 +51,12 @@ def Union (list_c,list_d):
     return new_list
 
 
+def Intersection (list_e,list_f):
+    intersected = []
+    for char in list_f:
+        if char in list_e:
+            intersected.append(char)
+    return intersected
+    
+
 
