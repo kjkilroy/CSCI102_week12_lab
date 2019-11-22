@@ -57,6 +57,13 @@ def Intersection (list_e,list_f):
         if char in list_e:
             intersected.append(char)
     return intersected
-    
+
+
+def NotIn (list_g,list_h):
+    uncommon = []
+    for char in list_g:
+        if char not in list_h:
+            uncommon.append(char)
+    return uncommon
 
 
