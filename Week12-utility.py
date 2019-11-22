@@ -29,3 +29,18 @@ def FindWordCount (list_1, string_3):
         if char == string_3:
             count = count + 1
     return count
+
+def ScoreFinder (list_a, list_b, string_a):
+    string_a = string_a.lower()
+    list_a1 = []
+    for char in list_a:
+        char = char.lower()
+        list_a1.append(char)
+    string_c = ' '.join(list_a1)
+    b = string_c.find(string_a)
+    for char in list_a1:
+        if char == string_a:
+            a = list_a1.index(char)
+            print('OUTPUT',list_a[a],'got a score of ',list_b[a])
+    if b == -1:
+        print('OUTPUT player not found')
